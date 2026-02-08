@@ -4,26 +4,100 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Glassy Catalog</title>
+
 <style>
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 80px;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f4f4;
 }
-a {
+
+header {
+    background-color: #D21818;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.container {
+    width: 70%;
+    margin: 60px auto;
+    background: white;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.link-button {
     display: block;
-    margin: 20px;
-    font-size: 20px;
+    width: 60%;
+    margin: 20px auto;
+    padding: 18px;
     text-decoration: none;
+    background-color: #D21818;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.link-button:hover {
+    background-color: #b31515;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    color: #777;
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 90%;
+        padding: 40px;
+    }
+
+    .link-button {
+        width: 90%;
+    }
 }
 </style>
 </head>
+
 <body>
 
-<h1>Glassy Catalog</h1>
+<header>
+    <h1>Gizlilik Politikası ve Kullanım Koşulları</h1>
+</header>
 
-<a href="gizlilik-politikasi.html">Gizlilik Politikası</a>
-<a href="kullanim-kosullari.html">Kullanım Koşulları</a>
+<div class="container">
+    <h2>Mobil Uygulamalar</h2>
+
+    <a class="link-button" href="glassy_catalog/gizlilik-politikasi.html">
+        Gizlilik Politikası
+    </a>
+
+    <a class="link-button" href="glassy_catalog/kullanim-kosullari.html">
+        Kullanım Koşulları
+    </a>
+
+</div>
+
+<footer>
+© 2026 Glassy Catalog - Tüm hakları saklıdır.
+</footer>
 
 </body>
 </html>
